@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://www.iwugm2022.web.app`,
   },
   plugins: [
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     {
