@@ -15,7 +15,9 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "firebase": "^9.6.11",
     "gatsby": "^4.12.1",
+    "gatsby-plugin-google-analytics": "^4.12.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }

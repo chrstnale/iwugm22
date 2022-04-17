@@ -3,5 +3,9 @@ module.exports = {
     title: `IW UGM 2022`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    {
+      trackingId: "G-LHB61EC407",
+    }
+  ],
 }
