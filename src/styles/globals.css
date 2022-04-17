@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  @font-face {
+    font-family: Axiforma;
+    src: url(/fonts/axiforma-regular.otf) format("opentype");
+  }
+
+  html{
+    font-family: Montserrat,system-ui, sans-serif;
+    @apply text-black
+  }
+
+
+  h1 {
+    @apply text-3xl font-bold md:text-4xl font-['Axiforma'];
+  }
+  h2 {
+    @apply text-2xl font-semibold md:text-3xl font-['Axiforma'];
+  }
+  h3 {
+    @apply text-xl font-medium md:text-2xl font-['Axiforma'];
+  }
+  h4 {
+    @apply text-lg font-normal md:text-xl font-['Axiforma'];
+  }
+  p {
+    @apply text-xs md:text-sm ;
+  }
+
+  section{
+    @apply p-16
+  }
+}
+
+@layer components {
+  .navbar-items{
+    @apply p-1 px-4 ease-in-out duration-300 mx-3 border border-white rounded-lg 
+    hover:border-blue focus:text-blue focus:border-white font-light text-xs md:text-sm;
+  }
+
+}
+
+@layer utilities {
+  .filter-none {
+    filter: none;
+  }
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
+}
+

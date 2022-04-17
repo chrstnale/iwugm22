@@ -4,6 +4,8 @@ module.exports = {
     siteUrl: `https://www.iwugm2022.web.app`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
