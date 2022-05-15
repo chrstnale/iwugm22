@@ -20,11 +20,11 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-scroll-reveal`,
-      options: {
-          once: false,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-scroll-reveal`,
+    //   options: {
+    //       once: false,
+    //   },
+    // },
   ],
 }

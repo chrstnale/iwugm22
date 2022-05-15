@@ -17,9 +17,9 @@ const IndexPage = () => {
       <Navbar/>
       <div className="absolute top-16 overflow-x-hidden bg-white" id="pages">
         <section id="home" className="h-screen w-full flex flex-col md:flex-row items-center justify-center pl-8 md:pl-3"
-          data-sal="slide-up"
-          data-sal-duration="1000"
-          data-sal-easing="ease-in-out"
+          // data-sal="slide-up"
+          // data-sal-duration="1000"
+          // data-sal-easing="ease-in-out"
           ><StaticImage
               src='../images/iwugm.png'
               alt="logo iwugm22"
