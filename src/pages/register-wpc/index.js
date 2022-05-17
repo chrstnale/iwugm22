@@ -1,4 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image';
+import '../../styles/globals.css';
 import React from 'react';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';

@@ -3,6 +3,7 @@ import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import { Helmet } from "react-helmet"
 import iwugm from "../../images/iwugm.webp";
+import '../../styles/globals.css';
 
 export default function RegisterWPCTeam(){
     return(
