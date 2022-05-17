@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet"
 import iwugm from "../images/iwugm.png";
 import { StaticImage } from 'gatsby-plugin-image';
 import { FaInstagram, FaTwitter, FaTiktok, FaYoutube, FaFacebookF, FaLinkedin, FaArrowCircleDown, FaArrowAltCircleDown } from 'react-icons/fa';
+import Testimonial from '../components/Testimonial';
 
 const IndexPage = () => {
   return (
@@ -16,7 +17,7 @@ const IndexPage = () => {
           <link rel="icon" href={iwugm} />
       </Helmet>
       <Navbar/>
-      <div className="absolute overflow-x-hidden bg-white" id="pages">
+      <div className="absolute w-screen overflow-x-hidden bg-white" id="pages">
         <section id="home" className="bg-[url('../images/city-bg.webp')] bg-cover min-h-screen w-full flex flex-col md:flex-row items-center justify-center pl-8 md:pl-3"
           // data-sal="slide-up"
           // data-sal-duration="1000"
@@ -88,15 +89,15 @@ const IndexPage = () => {
 
           </section>
 
-          <section id="testimonial" className="flex flex-col md:flex-row items-center w-full h-auto bg-white text-black p-0">
-          <div className='p-10 w-full md:w-1/3'>
+          <section id="testimonial" className="flex flex-col items-center w-full h-auto bg-white text-black p-0">
+            <div className='text-center py-10'>
                 <h2>What they say</h2>
                 <p>
                   Here what they say about IW UGM                  
                 </p>
-              </div>
-              <div className="w-full md:w-2/3 h-96">              
-             
+            </div>
+              <div className="w-full">              
+                <Testimonial/>
               </div>
           </section>
 
@@ -111,7 +112,7 @@ const IndexPage = () => {
                 <h3>IW UGM 2022</h3>
               </div>
               <address>
-                <a href='https://goo.gl/maps/zWLdb67etGk5796PA' target='_blank' className='hover:text-red'>
+                <a href='https://goo.gl/maps/JUbgjDshpv1jHGb28' target='_blank'rel="noopener" className='hover:text-red'>
                   Jl. Grafika No.2 Department of Mechanical and Industrial Engineering, Universitas Gadjah Mada, Yogyakarta 55281, Indonesia
                 </a>  
               </address>
@@ -119,34 +120,34 @@ const IndexPage = () => {
             <div className='md:w-1/3'>
               <h5>Contact</h5>
               <address>
-                <a href='mailto:industrialworkshop.ft@ugm.ac.id' className='hover:text-red' target='_blank'>
+                <a href='mailto:industrialworkshop.ft@ugm.ac.id' className='hover:text-red' target='_blank' rel="noopener">
                   Email: industrialworkshop.ft@ugm.ac.id
                 </a>
               </address>
               <br/>
               <h5>Call us:</h5>
-              <address><a href='https://wa.me/6285846173676' target='_blank' className='hover:text-red'>+6285846173676 Natalia Candela</a></address>
-              <address><a href='https://wa.me/6287770207972' target='_blank' className='hover:text-red'>+6287770207972 Faiza Ulinnuha</a></address>
+              <address><a href='https://wa.me/6285846173676' target='_blank' rel="noopener" className='hover:text-red'>+6285846173676 Natalia Candela</a></address>
+              <address><a href='https://wa.me/6287770207972' target='_blank' rel="noopener" className='hover:text-red'>+6287770207972 Faiza Ulinnuha</a></address>
             </div>
             <div className='md:w-1/3'>
               <h5>Follow us</h5>
               <div className='rounded-4xl grid grid-cols-6 gap-0 md:gap-2 text-xl justify-items-center mt-2'>
-                    <a href='https://line.me/R/ti/p/@qrb0856x' target='_blank' className='rounded-lg border-2 border-white  p-2 h-10 hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
+                    <a href='https://line.me/R/ti/p/@qrb0856x' target='_blank' rel="noopener" className='rounded-lg border-2 border-white  p-2 h-10 hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
                         <StaticImage src='../images/line-messenger.webp' alt='line-messenger logo' className='w-5 h-5 m-0'/>
                     </a>
-                    <a href="https://www.instagram.com/iwugm" target="_blank" className='rounded-lg border-2 border-white p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
+                    <a href="https://www.instagram.com/iwugm" target="_blank" rel="noopener" className='rounded-lg border-2 border-white p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
                         <FaInstagram/>
                     </a>
-                    <a href="https://twitter.com/iwugm"  target="_blank" className='rounded-lg border-2 border-white  p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
+                    <a href="https://twitter.com/iwugm"  target="_blank" rel="noopener" className='rounded-lg border-2 border-white  p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
                         <FaTwitter/>
                     </a>
-                    <a href="https://www.youtube.com/channel/UC68uMGtVkPYY3IoaDN1QqXA"  target="_blank" className='rounded-lg border-2 border-white p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
+                    <a href="https://www.youtube.com/channel/UC68uMGtVkPYY3IoaDN1QqXA"  target="_blank" rel="noopener" className='rounded-lg border-2 border-white p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
                         <FaYoutube/>
                     </a>
-                    <a href="https://www.facebook.com/IndustrialWorkshop" target="_blank" className='rounded-lg border-2 border-white  p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
+                    <a href="https://www.facebook.com/IndustrialWorkshop" target="_blank" rel="noopener" className='rounded-lg border-2 border-white  p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
                         <FaFacebookF/>
                     </a>
-                    <a href="https://www.linkedin.com/company/iwugm" target="_blank" className='rounded-lg border-2 border-white  p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
+                    <a href="https://www.linkedin.com/company/iwugm" target="_blank" rel="noopener" className='rounded-lg border-2 border-white  p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
                         <FaLinkedin/>
                     </a>
                 </div>

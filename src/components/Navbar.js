@@ -83,7 +83,7 @@ export default function Navbar(){
                 <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-64} className="w-full md:w-auto" onClick={handleClick}>
                     <button className='navbar-items'>Contact</button>
                 </Link>
-                <a href="https://iwugm.com/#home" target="_blank" rel="noreferrer" className='navbar-items font-medium text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-red py-2' onClick={handleClick}>
+                <a href="https://iwugm.com/#home" target="_blank" rel="noopener" className='navbar-items shadow-2xl font-medium text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-red py-2' onClick={handleClick}>
                         Register Now!
                 </a>
             </div>
