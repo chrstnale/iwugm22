@@ -57,7 +57,7 @@ export default function Navbar({
             <div className="flex items-center">
                 <a href='/' className='navbar-items flex items-center text-base md:text-lg font-semibold rounded-md px-3 py-0'>
                     <StaticImage 
-                        src='../images/iwugm.png'
+                        src='../images/iwugm.webp'
                         alt="logo iwugm22"
                         layout="fixed"
                         width={32}
