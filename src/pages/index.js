@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from "../components/Navbar";
 import '../styles/globals.css';
 import { Helmet } from "react-helmet"
-import iwugm from "../images/iwugm.png";
+import iwugm from "../images/iwugm.webp";
 import { StaticImage } from 'gatsby-plugin-image';
 import Testimonial from '../components/Testimonial';
 import Footer from '../components/Footer';
@@ -23,7 +23,7 @@ const IndexPage = () => {
           // data-sal-duration="1000"
           // data-sal-easing="ease-in-out"
           ><StaticImage
-              src='../images/iwugm.png'
+              src='../images/iwugm.webp'
               alt="logo iwugm22"
               className='w-60 md:w-96 md:mr-4'
             />
