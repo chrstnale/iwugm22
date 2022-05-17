@@ -27,7 +27,7 @@ export default function Navbar(){
         changeShadow()
         // adding the event when scroll change background
         window.addEventListener("scroll", changeShadow)
-      }, (window.scrollY))
+      },)
 
     //   const sections = document.querySelectorAll("section[id]");
     //   window.addEventListener("scroll", navHighlighter)
