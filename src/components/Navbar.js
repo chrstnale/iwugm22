@@ -16,7 +16,7 @@ export default function Navbar(){
     }
 
     const changeShadow = () => {
-        if (window.scrollY >= 100) {
+        if (window.scrollY >= 50) {
           setNavbarShadow(true)
         } else {
           setNavbarShadow(false)
@@ -29,10 +29,29 @@ export default function Navbar(){
         window.addEventListener("scroll", changeShadow)
       }, (window.scrollY))
 
+    //   const sections = document.querySelectorAll("section[id]");
+    //   window.addEventListener("scroll", navHighlighter)
+
+    //   const navHighlighter = () => {
+    //         sections.forEach(current => {
+    //           const sectionHeight = current.offsetHeight;
+    //           const sectionTop = (current.getBoundingClientRect().top + window.scrollY);
+    //           const sectionId = current.getAttribute("id");
+
+    //           if(window.scrollY = sectionTop && window.scrollY <= sectionTop + sectionHeight){
+    //             console.log(sectionId + 'is true')
+    //             document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("bg-red");
+    //             } else {
+    //                 console.log(sectionId + 'is false')
+    //             document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("bg-red");
+    //             } 
+    //         });
+    //   }
+
     return(
         <header className={`fixed top-0 left-0 w-screen p-0 md:p-3 h-9 md:h-16 z-10 whitespace-nowrap
                             flex justify-between items-center ${navbarShadow ? 'shadow-lg bg-white' : ''}
-                            transition-all duration-300 ease-in-out`}>
+                            transition-all duration-100 ease-in-out`}>
             <div className="flex items-center">
                 <Link activeClass="active" to="home" spy={true} smooth={true} offset={-64} className='navbar-items flex items-center text-base md:text-lg font-semibold rounded-md px-3 py-0'>
                     <StaticImage 
@@ -48,23 +67,23 @@ export default function Navbar(){
             <div className='p-1 px-4 mx-3 rounded-lg font-light text-xs md:text-sm hover:text-blue md:hidden'>
                 {isClicked ? <FaTimes onClick={handleClick} className='text-blue cursor-pointer transition-all ease-in-out duration-1000'/> : <FaBars onClick={handleClick} className='cursor-pointer'/>}
             </div>
-            <div className={`${itemDisplay ? 'block bg-white' : 'hidden'} md:block items-center w-full md:w-auto flex flex-col absolute left-0 top-9 md:top-16 md:flex-row md:static transition-all duration-500 ease-in-out`}>
-                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-64} className='navbar-items' onClick={handleClick}>
-                    Home
+            <div className={`${itemDisplay ? 'block' : 'hidden'} bg-white md:bg-transparent md:block items-center w-full md:w-auto flex flex-col absolute left-0 top-9 md:top-16 md:flex-row md:static transition-all duration-500 ease-in-out`}>
+                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-64} className='w-full md:w-auto' onClick={handleClick}>
+                   <button className='navbar-items'>Home</button>
                 </Link>
-                <Link activeClass="active" to="about" spy={true} smooth={true} offset={-64} className="navbar-items" onClick={handleClick}>
-                    About
+                <Link activeClass="active" to="about" spy={true} smooth={true} offset={-64} className="w-full md:w-auto" onClick={handleClick}>
+                    <button className='navbar-items'>About</button>
                 </Link>   
-                <Link activeClass="active" to="workshop" spy={true} smooth={true} offset={-64} className="navbar-items" onClick={handleClick}>
-                    Workshop
+                <Link activeClass="active" to="workshop" spy={true} smooth={true} offset={-64} className="w-full md:w-auto" onClick={handleClick}>
+                    <button className='navbar-items'>Workshop</button>
                 </Link>
-                <Link activeClass="active" to="wpc" spy={true} smooth={true} offset={-64} className="navbar-items" onClick={handleClick}>
-                    WPC
+                <Link activeClass="active" to="wpc" spy={true} smooth={true} offset={-64} className="w-full md:w-auto" onClick={handleClick}>
+                    <button className='navbar-items'>WPC</button>
                 </Link>
-                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-64} className="navbar-items" onClick={handleClick}>
-                   Contact
+                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-64} className="w-full md:w-auto" onClick={handleClick}>
+                    <button className='navbar-items'>Contact</button>
                 </Link>
-                <a href="https://iwugm.com/#home" target="_blank" rel="noreferrer" className='navbar-items font-medium text-white bg-blue hover:bg-gradient-to-tr hover:from-blue hover:to-red py-2' onClick={handleClick}>
+                <a href="https://iwugm.com/#home" target="_blank" rel="noreferrer" className='navbar-items font-medium text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-red py-2' onClick={handleClick}>
                         Register Now!
                 </a>
             </div>
