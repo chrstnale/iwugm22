@@ -1,12 +1,14 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import '../../styles/globals.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import { Helmet } from "react-helmet"
 import iwugm from "../../images/iwugm.webp";
 
 export default function RegisterWPC(){
+    useEffect(() => {
+        window.scrollTo(0,0);
+      }, [])
     return(
         <>
               <Helmet

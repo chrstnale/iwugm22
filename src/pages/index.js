@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from "../components/Navbar";
 import '../styles/globals.css';
 import { Helmet } from "react-helmet"
@@ -11,6 +11,10 @@ import TimelineWPC from '../components/Timeline';
 import Galeri from '../components/Galeri';
 
 const IndexPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [])
   return (
    <>
       <Helmet
@@ -98,7 +102,8 @@ const IndexPage = () => {
                 <p>
                   The white paper is a short document that summarizes the result of research and technology on an issue that can be applied to answer the problem. The white paper briefly describes the issues to be resolved, data analysis, and recommendations for solutions given in a sharp, coherent, systematic, and comprehensive manner.
                   <br/><br/>
-                  The theme of the 2022 Industrial Workshop White Paper Competition is “Overcome Global Issues on Supply Chain Instability in Various Industries“.
+                  The theme of the 2022 Industrial Workshop White Paper Competition is <span className='font-deco text-xl'>“Overcome Global Issues on Supply Chain Instability in Various Industries“.
+                    </span>
                 </p>
                 <br/>
                 <div className='grid grid-cols-3 md:grid-cols-4 justify-items-center p-5 gap-y-4 '>
