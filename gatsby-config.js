@@ -20,13 +20,13 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-scroll-reveal`,
-    //   options: {
-    //       threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
-    //       once: false, // Defines if animation needs to be launched once
-    //       disable: false, // Flag for disabling animations
-    //   },
-    // }
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+          threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
+          once: false, // Defines if animation needs to be launched once
+          disable: false, // Flag for disabling animations
+      },
+    }
   ],
 }

@@ -102,9 +102,10 @@ const IndexPage = () => {
                 <p>
                   The white paper is a short document that summarizes the result of research and technology on an issue that can be applied to answer the problem. The white paper briefly describes the issues to be resolved, data analysis, and recommendations for solutions given in a sharp, coherent, systematic, and comprehensive manner.
                   <br/><br/>
-                  The theme of the 2022 Industrial Workshop White Paper Competition is <span className='font-deco text-xl'>“Overcome Global Issues on Supply Chain Instability in Various Industries“.
-                    </span>
+                  The theme of the 2022 Industrial Workshop White Paper Competition is 
                 </p>
+                <h4 className='font-deco'>“Overcome Global Issues on Supply Chain Instability in Various Industries“.</h4>
+
                 <br/>
                 <div className='grid grid-cols-3 md:grid-cols-4 justify-items-center p-5 gap-y-4 '>
                   <a href="https://drive.google.com/drive/folders/1KgDJs_WE4rTwTJ89_qtzBPW-7ugtSzXn?usp=sharing" target='_blank' rel="noopener noreferrer" className='text-center rounded-md cursor-pointer flex flex-col items-center hover:text-red'>
