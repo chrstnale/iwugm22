@@ -1,5 +1,5 @@
 import React from 'react';
-import { EffectFlip, Pagination, Autoplay } from "swiper";
+import { EffectFlip, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper style
@@ -7,58 +7,55 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { DaftarTestimoni } from './DaftarTestimoni';
+import { DaftarTimeline } from './DaftarTimeline';
 
 const TimelineWPC = () => {
     return(
     <Swiper
+        style={{
+          "--swiper-navigation-color": "#161616",
+          "--swiper-pagination-color": "#161616",
+      }}
+          pagination={{
+            clickable: true
+        }}
+        slidesPerView={2}
         spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        loop={true}
+        navigation={true}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          }}}
         grabCursor={true}
-        modules={[ Autoplay, Pagination, EffectFlip]}
+        modules={[ EffectFlip, Navigation, Pagination]}
         className='mb-10 mySwiper'
     >
-      {DaftarTestimoni.map((item, index) => {
-        if (index % 2 == 0){
-          return(
-            <SwiperSlide className='px-4 md:px-40'>
-              <div className='bg-neutral-900 text-white flex flex-col md:flex-row rounded-xl items-center'>
-                {item.photo}
-                <div className='p-8 w-full md:w-4/5'>
-                  {item.testimony}
-                  <br/>
-                  <h5>{item.name} - {item.jobTitle}</h5>
-                  <h6>{item.eventTitle}</h6>
-                </div>
-              </div>
-            </SwiperSlide>
-          )
-        } else {
-          return(
-            <SwiperSlide className='px-4 md:px-40'>
-              <div className='bg-neutral-300 text-black flex flex-col md:flex-row rounded-xl items-center'>
-                <div className='p-8 w-full md:w-4/5 order-2'>
-                  {item.testimony}
-                  <br/>
-                  <h5>{item.name} - {item.jobTitle}</h5>
-                  <h6>{item.eventTitle}</h6>
-                </div>
-                {item.photo}
-              </div>
-            </SwiperSlide>            
-          )
-        }
+      {DaftarTimeline.map((item, index) => {
+        return(
+          <SwiperSlide>
+            <div className={`relative w-full h-60 flex flex-col rounded-xl items-center ${(index % 2 === 0) ? 'bg-blue text-white' : 'bg-white text-black'}`}>
+            <p className='absolute left-0 top-0 w-full p-4 font-light'>
+              {item.date}
+            </p>
+            <h4 className='absolute right-0 bottom-0 w-full text-right p-4 font-semibold'>
+              {item.title}
+            </h4>
+          </div>
+          </SwiperSlide>
+
+        )
       })}
     </Swiper>
 
     )
 }
-export default Testimonial;
+export default TimelineWPC;

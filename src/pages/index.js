@@ -6,7 +6,9 @@ import iwugm from "../images/iwugm.webp";
 import { StaticImage } from 'gatsby-plugin-image';
 import Testimonial from '../components/Testimonial';
 import Footer from '../components/Footer';
-import { FaAddressBook, FaBook, FaQuestionCircle, FaRegFileAlt } from 'react-icons/fa';
+import { FaBook, FaQuestionCircle, FaRegFileAlt } from 'react-icons/fa';
+import TimelineWPC from '../components/Timeline';
+import Galeri from '../components/Galeri';
 
 const IndexPage = () => {
   return (
@@ -50,9 +52,9 @@ const IndexPage = () => {
           {/* About */}
           <section id="about" className="relative text-white bg-blue flex flex-col md:flex-row w-full">
             <StaticImage
-              src='../images/city-bg.webp'
-              alt="logo iwugm22"
-              className='w-full md:w-2/3 md:mr-4'
+              src='../images/about.webp'
+              alt="about"
+              className='w-full md:mr-4'
               placeholder='none'
             />
             <div className='mt-8 ml-0 md:mt-0 md:ml-8'>
@@ -69,15 +71,26 @@ const IndexPage = () => {
                 The Industrial Workshop will be divided into two branches of events: a Workshop with a simulation of case solving in the form of group games and a Seminar that will be filled with several sessions of presentations from different experienced speakers.
               </p>
             </div>
-            <div className='absolute bottom-0 w-full left-0 h-12 bg-gradient-to-b from-transparent to-black'/>
           </section>
+
+          {/* Galeri */}
+          <section className=" relative w-full h-auto bg-blue text-white pt-0 pb-20">
+            <div className='w-full'>
+              <div className='text-center py-10'>
+                  <h3>Last Year’s</h3>
+                  <p>These are the highlights and memories from previous years of Industrial Workshop.</p>
+              </div>
+              <Galeri/>
+            </div>
+            <div className='absolute bottom-0 w-full left-0 h-12 bg-gradient-to-b from-transparent to-black'/>
+          </section>          
 
           {/* WPC */}
           <section id="wpc" className="relative text-white bg-black flex flex-col md:flex-row w-full">
           <StaticImage
-              src='../images/city-bg.webp'
-              alt="logo iwugm22"
-              className='w-full md:w-2/3 md:mr-4 order-1 md:order-3'
+              src='../images/wpc.webp'
+              alt="WPC"
+              className='w-full md:mr-4 order-1 md:order-3'
               placeholder='none'
             />
             <div className='mt-8 mr-0 md:mt-0 md:mr-8 order-2'>
@@ -89,15 +102,15 @@ const IndexPage = () => {
                 </p>
                 <br/>
                 <div className='grid grid-cols-3 md:grid-cols-4 justify-items-center p-5 gap-y-4 '>
-                  <a href="https://drive.google.com/drive/folders/1KgDJs_WE4rTwTJ89_qtzBPW-7ugtSzXn?usp=sharing" target='_blank' rel="noopener" className='text-center rounded-md cursor-pointer flex flex-col items-center hover:text-red'>
+                  <a href="https://drive.google.com/drive/folders/1KgDJs_WE4rTwTJ89_qtzBPW-7ugtSzXn?usp=sharing" target='_blank' rel="noopener noreferrer" className='text-center rounded-md cursor-pointer flex flex-col items-center hover:text-red'>
                     <FaBook className='text-3xl mb-2'/>
                     <p>Guidebook</p>
                   </a>
-                  <a href="https://drive.google.com/drive/folders/1k8Ux43tE-OGOIOp-1zT0RQWe8oUhN5yf?usp=sharing" target='_blank' rel="noopener" className='text-center rounded-md cursor-pointer flex flex-col items-center hover:text-red'>
+                  <a href="https://drive.google.com/drive/folders/1k8Ux43tE-OGOIOp-1zT0RQWe8oUhN5yf?usp=sharing" target='_blank' rel="noopener noreferrer" className='text-center rounded-md cursor-pointer flex flex-col items-center hover:text-red'>
                     <FaQuestionCircle className='text-3xl mb-2'/>
                     <p>FAQ</p>
                   </a>
-                  <a href='https://drive.google.com/drive/folders/1kWEtxNU7NCMINKCVWQ2fyqKgtYSR9cnp?usp=sharing' target='_blank' rel="noopener" className='text-center rounded-md cursor-pointer flex flex-col items-center hover:text-red'>
+                  <a href='https://drive.google.com/drive/folders/1kWEtxNU7NCMINKCVWQ2fyqKgtYSR9cnp?usp=sharing' target='_blank' rel="noopener noreferrer" className='text-center rounded-md cursor-pointer flex flex-col items-center hover:text-red'>
                     <FaRegFileAlt className='text-3xl mb-2'/>
                     <p>Required File</p>
                   </a>
@@ -109,19 +122,22 @@ const IndexPage = () => {
           </section>
 
           {/* WPC Timeline */}
-          {/* <section className=" relative flex flex-col items-center w-full h-auto bg-black text-black p-0">
+          <section className=" relative w-full h-auto bg-black text-white pt-0 pb-20">
+            <div className='text-center py-10'>
+                <h3>White Paper Competition Timeline</h3>
+            </div>
             <div className='w-full'>
-              <Testimonial/>
+              <TimelineWPC/>
             </div>
             <div className='absolute bottom-0 w-full left-0 h-12 bg-gradient-to-b from-transparent to-red'/>
-          </section> */}
+          </section>
           
           {/* Workshop */}
           <section id="workshop" className="relative text-white bg-red flex flex-col md:flex-row w-full pb-20">
             <StaticImage
-              src='../images/city-bg.webp'
-              alt="logo iwugm22"
-              className='w-full md:w-2/3 md:mr-4'
+              src='../images/workshop.webp'
+              alt="workshop"
+              className='w-full md:mr-4'
               placeholder='none'
             />
             <div className='mt-8 ml-0 md:mt-0 md:ml-8'>
@@ -140,9 +156,9 @@ const IndexPage = () => {
           {/* Seminar */}
           <section id="seminar" className="relative text-white bg-black flex flex-col md:flex-row w-full pb-20">
             <StaticImage
-              src='../images/city-bg.webp'
-              alt="logo iwugm22"
-              className='w-full md:w-2/3 md:mr-4 order-1 md:order-3'
+              src='../images/seminar.webp'
+              alt="seminar"
+              className='w-full md:mr-4 order-1 md:order-3'
               placeholder='none'
             />
             <div className='mt-8 mr-0 md:mt-0 md:mr-8 order-2'>
@@ -162,19 +178,19 @@ const IndexPage = () => {
           {/* Testimonial */}
           <section id="testimonial" className="relative flex flex-col items-center w-full h-auto pb-20 bg-white text-black p-0">
             <div className='text-center py-10'>
-                <h2>What they say</h2>
-                <p>
-                  Here what they say about IW UGM                  
-                </p>
+                <h2>Testimonial</h2>
+                <p>Here what they said about IW UGM</p>
             </div>
               <div className="w-full">              
                 <Testimonial/>
               </div>
               <div className='absolute bottom-0 w-full left-0 h-12 bg-gradient-to-b from-transparent to-blue'/>
           </section>
-          <section className='w-full bg-blue text-white text-center'>
+
+          <section className=' relative w-full bg-blue text-white text-center p-20'>
             <h2>Sponsor & Media Partner</h2>
             <p>Still looking for potential sponsor & media partner. Please contact us for further details.</p>
+            <div className='absolute bottom-0 w-full left-0 h-12 bg-gradient-to-b from-transparent to-black'/>
           </section>
 
           <Footer/>
