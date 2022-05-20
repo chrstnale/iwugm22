@@ -21,16 +21,16 @@ export default function RegisterWPC(){
                     <h1 className="text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-blue to-red mb-10 ">
                         Are you registering in a team or individually?
                     </h1>
-                    <div className='grid grid-rows-3 md:grid-cols-3 gap-1'>
-                    <a href="/register-wpc/team" className='navbar-items shadow-2xl font-normal hover:font-medium text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-red p-2.5'>
-                            Team Register
-                    </a>
-                    <a href="/register-wpc/individual" className='navbar-items shadow-2xl font-normal hover:font-medium text-blue border-2 border-blue hover:bg-gradient-to-r hover:from-blue hover:to-red p-2.5'>
-                            Individual Register
-                    </a>
-                    <a href="/" className='text-xs shadow-2xl text-blue border-2 border-transparent hover:text-black font-normal hover:font-medium p-2.5 text-center rounded-md'>
-                            Back to Home
-                    </a>
+                    <div className='grid grid-rows-2 md:grid-cols-2 gap-x-1 gap-y-4'>
+                        <a href="/register-wpc/team" className='navbar-items shadow-2xl font-normal hover:font-medium text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-red p-2.5'>
+                                Register as a Team
+                        </a>
+                        <a href="/register-wpc/individual" className='navbar-items shadow-2xl font-normal hover:font-medium text-blue border-2 border-blue hover:bg-gradient-to-r hover:from-blue hover:to-red p-2.5'>
+                                Register as an Individual
+                        </a>
+                        <a href="/" className='md:col-span-2 text-xs shadow-2xl text-blue border-2 border-transparent hover:text-black font-normal hover:font-medium p-2.5 text-center rounded-md'>
+                                Back to Home
+                        </a>
                 </div>
                 </section>                          
                 <Footer/>

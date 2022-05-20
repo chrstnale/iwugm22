@@ -11,13 +11,15 @@ export default function Footer(){
                   src='../images/iwugm.webp'
                   alt="logo iwugm22"
                   className='w-12 md:mr-4'
+                  placeholder='none'
                 />
                 <h3>IW UGM 2022</h3>
               </div>
               <address>
                 <a href='https://goo.gl/maps/JUbgjDshpv1jHGb28' target='_blank'rel="noopener" className='hover:text-red'>
                   Jl. Grafika No.2 Department of Mechanical and Industrial Engineering, Universitas Gadjah Mada, Yogyakarta 55281, Indonesia
-                </a>  
+                </a>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d988.3072725555083!2d110.3711296!3d-7.7655132!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe9a3f290ba6f2ee9!2sDepartment%20of%20Mechanical%20and%20Industrial%20Engineering!5e0!3m2!1sen!2sid!4v1653045178020!5m2!1sen!2sid" className='border-0 w-full h-40 mt-2' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </address>
             </div>
             <div className='md:w-1/3'>
@@ -34,9 +36,9 @@ export default function Footer(){
             </div>
             <div className='md:w-1/3'>
               <h5>Follow us</h5>
-              <div className='rounded-4xl grid grid-cols-6 gap-0 md:gap-2 text-xl justify-items-center mt-2'>
+              <div className='rounded-4xl grid grid-cols-5 md:grid-cols-7 gap-x-0 gap-y-4 text-xl justify-items-center mt-2'>
                     <a href='https://line.me/R/ti/p/@qrb0856x' target='_blank' rel="noopener" className='rounded-lg border-2 border-white  p-2 h-10 hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
-                        <StaticImage src='../images/line-messenger.webp' alt='line-messenger logo' className='w-5 h-5 m-0'/>
+                        <StaticImage src='../images/line-messenger.webp' alt='line-messenger logo' className='w-5 h-5 m-0' placeholder='none'/>
                     </a>
                     <a href="https://www.instagram.com/iwugm" target="_blank" rel="noopener" className='rounded-lg border-2 border-white p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
                         <FaInstagram/>
@@ -52,6 +54,9 @@ export default function Footer(){
                     </a>
                     <a href="https://www.linkedin.com/company/iwugm" target="_blank" rel="noopener" className='rounded-lg border-2 border-white  p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
                         <FaLinkedin/>
+                    </a>
+                    <a href="https://www.tiktok.com/@iwugm" target="_blank" rel="noopener" className='rounded-lg border-2 border-white  p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
+                        <FaTiktok/>
                     </a>
                 </div>
             </div>

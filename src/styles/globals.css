@@ -45,8 +45,8 @@
 
 @layer components {
   .navbar-items{
-    @apply md:bg-transparent py-2.5 md:py-1 md:px-4 w-full md:w-auto text-center cursor-pointer transition-all duration-300 ease-in-out md:mx-3 rounded-lg 
-    hover:bg-blue hover:text-white active:bg-blue active:text-white font-normal text-xs md:text-sm border border-transparent focus:border-blue;
+    @apply lg:bg-transparent py-2.5 lg:py-1 lg:px-4 w-full lg:w-auto text-center cursor-pointer transition-all duration-300 ease-in-out lg:mx-3 rounded-lg 
+    hover:bg-blue hover:text-white active:bg-blue active:text-white font-normal text-xs lg:text-sm border border-transparent focus:border-blue;
   }
   .bg-clip-text {
     background-clip: text;
