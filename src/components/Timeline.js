@@ -1,5 +1,5 @@
 import React from 'react';
-import { EffectFlip, Pagination, Autoplay, Navigation } from "swiper";
+import { EffectFlip, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper style
@@ -9,10 +9,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { DaftarTestimoni } from './DaftarTestimoni';
 
-const Testimonial = () => {
+const TimelineWPC = () => {
     return(
     <Swiper
-        autoHeight={true}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -22,10 +21,9 @@ const Testimonial = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
         loop={true}
         grabCursor={true}
-        modules={[ Autoplay, Pagination, EffectFlip, Navigation]}
+        modules={[ Autoplay, Pagination, EffectFlip]}
         className='mb-10 mySwiper'
     >
       {DaftarTestimoni.map((item, index) => {

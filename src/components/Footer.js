@@ -36,7 +36,7 @@ export default function Footer(){
             </div>
             <div className='md:w-1/3'>
               <h5>Follow us</h5>
-              <div className='rounded-4xl grid grid-cols-5 md:grid-cols-7 gap-x-0 gap-y-4 text-xl justify-items-center mt-2'>
+              <div className='rounded-4xl grid grid-cols-6 gap-x-0 gap-y-4 text-xl justify-items-center mt-2'>
                     <a href='https://line.me/R/ti/p/@qrb0856x' target='_blank' rel="noopener" className='rounded-lg border-2 border-white  p-2 h-10 hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
                         <StaticImage src='../images/line-messenger.webp' alt='line-messenger logo' className='w-5 h-5 m-0' placeholder='none'/>
                     </a>
@@ -48,9 +48,6 @@ export default function Footer(){
                     </a>
                     <a href="https://www.youtube.com/channel/UC68uMGtVkPYY3IoaDN1QqXA"  target="_blank" rel="noopener" className='rounded-lg border-2 border-white p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
                         <FaYoutube/>
-                    </a>
-                    <a href="https://www.facebook.com/IndustrialWorkshop" target="_blank" rel="noopener" className='rounded-lg border-2 border-white  p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
-                        <FaFacebookF/>
                     </a>
                     <a href="https://www.linkedin.com/company/iwugm" target="_blank" rel="noopener" className='rounded-lg border-2 border-white  p-2 h-fit hover:bg-gradient-to-tr hover:from-blue hover:to-red'>
                         <FaLinkedin/>
