@@ -45,10 +45,10 @@ const Testimonial = () => {
       {DaftarTestimoni.map((item, index) => {
         if (index % 2 === 0){
           return(
-            <SwiperSlide className='px-4 md:px-40'>
-              <div className='bg-neutral-900 text-white flex flex-col md:flex-row rounded-xl items-center'>
+            <SwiperSlide className='px-4 lg:px-40'>
+              <div className='bg-neutral-900 text-white flex flex-col lg:flex-row rounded-xl items-center'>
                 {item.photo}
-                <div className='p-8 w-full md:w-4/5'>
+                <div className='p-8 w-full lg:w-4/5'>
                   {item.testimony}
                   <br/>
                   <h5>{item.name} - {item.jobTitle}</h5>
@@ -59,9 +59,9 @@ const Testimonial = () => {
           )
         } else {
           return(
-            <SwiperSlide className='px-4 md:px-40'>
-              <div className='bg-neutral-300 text-black flex flex-col md:flex-row rounded-xl items-center'>
-                <div className='p-8 w-full md:w-4/5 order-2'>
+            <SwiperSlide className='px-4 lg:px-40'>
+              <div className='bg-neutral-300 text-black flex flex-col lg:flex-row rounded-xl items-center'>
+                <div className='p-8 w-full lg:w-4/5 order-2'>
                   {item.testimony}
                   <br/>
                   <h5>{item.name} - {item.jobTitle}</h5>

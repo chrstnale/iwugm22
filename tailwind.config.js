@@ -3,6 +3,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
+    fontFamily: {
+      axiforma: ['Axiforma', 'sans-serif'],
+      body: ['Montserrat'],
+      deco: ['Playfair']
+    },
     extend: {
       colors:{
         blue: '#024c68',
