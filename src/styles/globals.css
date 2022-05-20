@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Axiforma";
-  src: url(../fonts/axiforma-regular.otf);
+  src: local('Axiforma'), url(../fonts/axiforma-regular.otf), format('opentype');
 }
 
 @layer base {
