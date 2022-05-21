@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
   font-family: "Axiforma";
   src: url(../fonts/axiforma-regular.otf);
@@ -10,7 +11,7 @@
 @layer base {
 
   html{
-    font-family: Axiforma,Montserrat, serif;
+    font-family: Montserrat, system-ui, sans-serif;
     @apply text-black
   }
 
@@ -33,7 +34,7 @@
     @apply text-sm font-light md:text-base font-['Axiforma'];
   }
   p {
-    @apply text-sm md:text-base font-['Montserrat'];
+    @apply text-sm md:text-base font-body;
   }
 
   section{

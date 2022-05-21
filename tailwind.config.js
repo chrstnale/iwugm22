@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}"
@@ -5,7 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       axiforma: ['Axiforma'],
-      body: ['ui-serif','Montserrat'],
+      body: ['Montserrat', ...defaultTheme.fontFamily.sans],
       deco: ['ui-sans-serif', 'Playfair']
     },
     extend: {
