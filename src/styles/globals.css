@@ -10,7 +10,7 @@
 @layer base {
 
   html{
-    font-family: Axiforma,system-ui, sans-serif;
+    font-family: Axiforma,Montserrat, serif;
     @apply text-black
   }
 
@@ -33,7 +33,7 @@
     @apply text-sm font-light md:text-base font-['Axiforma'];
   }
   p {
-    @apply text-sm md:text-base font-body;
+    @apply text-sm md:text-base font-['Montserrat'];
   }
 
   section{

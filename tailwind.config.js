@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     fontFamily: {
       axiforma: ['Axiforma'],
-      body: ['Montserrat'],
-      deco: ['Playfair']
+      body: ['ui-serif','Montserrat'],
+      deco: ['ui-sans-serif', 'Playfair']
     },
     extend: {
       colors:{

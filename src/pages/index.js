@@ -61,7 +61,10 @@ const IndexPage = () => {
               className='w-full md:mr-4'
               placeholder='none'
             />
-            <div className='mt-8 ml-0 md:mt-0 md:ml-8'>
+            <div className='mt-8 ml-0 md:mt-0 md:ml-8'
+                          data-sal="slide-left"
+                          data-sal-duration="500"
+                          data-sal-easing="ease">
               <h2>About Us</h2>
               <p>
                 Industrial Workshop is an annual event held by Himpunan Mahasiswa Teknik Industri Universitas Gadjah Mada. Industrial Workshop is a spectacular workshop event providing an experience of solving current industrial problems with speakers from many fields of expertise.
@@ -80,7 +83,10 @@ const IndexPage = () => {
           {/* Galeri */}
           <section className=" relative w-full h-auto bg-blue text-white pt-0 pb-20">
             <div className='w-full'>
-              <div className='text-center py-10'>
+              <div className='text-center py-10'
+                  data-sal="zoom-in"
+                  data-sal-duration="500"
+                  data-sal-easing="ease">
                   <h3>Last Year’s</h3>
                   <p>These are the highlights and memories from previous years of Industrial Workshop.</p>
               </div>
@@ -97,7 +103,10 @@ const IndexPage = () => {
               className='w-full md:mr-4 order-3'
               placeholder='none'
             />
-            <div className='mt-8 mr-0 md:mt-0 md:mr-8 order-1'>
+            <div className='mt-8 mr-0 md:mt-0 md:mr-8 order-1'
+                data-sal="slide-right"
+                data-sal-duration="500"
+                data-sal-easing="ease">
                 <h2>White Paper Competition</h2>
                 <p>
                   The white paper is a short document that summarizes the result of research and technology on an issue that can be applied to answer the problem. The white paper briefly describes the issues to be resolved, data analysis, and recommendations for solutions given in a sharp, coherent, systematic, and comprehensive manner.
@@ -107,7 +116,10 @@ const IndexPage = () => {
                 <h4 className='font-deco'>“Overcome Global Issues on Supply Chain Instability in Various Industries“.</h4>
 
                 <br/>
-                <div className='grid grid-cols-3 md:grid-cols-4 justify-items-center p-5 gap-y-4 '>
+                <div className='grid grid-cols-3 md:grid-cols-4 justify-items-center p-5 gap-y-4 '
+                  data-sal="zoom-in"
+                  data-sal-duration="500"
+                  data-sal-easing="ease">
                   <a href="https://drive.google.com/drive/folders/1KgDJs_WE4rTwTJ89_qtzBPW-7ugtSzXn?usp=sharing" target='_blank' rel="noopener noreferrer" className='text-center rounded-md cursor-pointer flex flex-col items-center hover:text-red'>
                     <FaBook className='text-3xl mb-2'/>
                     <p>Guidebook</p>
@@ -140,7 +152,10 @@ const IndexPage = () => {
           {/* WPC Timeline */}
           <section className=" relative w-full h-auto bg-black text-white pt-0 pb-20">
             <div className='text-center pb-10'>
-                <h3>White Paper Competition Timeline</h3>
+                <h3
+                data-sal="zoom-in"
+                data-sal-duration="500"
+                data-sal-easing="ease">White Paper Competition Timeline</h3>
             </div>
             <div className='w-full'>
               <TimelineWPC/>
@@ -156,7 +171,10 @@ const IndexPage = () => {
               className='w-full md:mr-4'
               placeholder='none'
             />
-            <div className='mt-8 ml-0 md:mt-0 md:ml-8'>
+            <div className='mt-8 ml-0 md:mt-0 md:ml-8'
+            data-sal="slide-left"
+            data-sal-duration="500"
+            data-sal-easing="ease">
                 <h2>Workshop</h2>
                 <p>
                   Workshop is one of the series of Industrial Workshop that provides some materials on supply chains and gives a challenge for the participant in the form of case studies from the company as a contributor to be completed together with their groups. With case studies, participants will learn what templates are relevant to use in problem-solving and how to solve problems in the company nowadays.
@@ -177,7 +195,10 @@ const IndexPage = () => {
               className='w-full md:mr-4 order-1 md:order-3'
               placeholder='none'
             />
-            <div className='mt-8 mr-0 md:mt-0 md:mr-8 order-2'>
+            <div className='mt-8 mr-0 md:mt-0 md:mr-8 order-2'
+                      data-sal="slide-right"
+                      data-sal-duration="500"
+                      data-sal-easing="ease">
                 <h2>Seminar</h2>
                 <p>
                   Learning something using basic concepts is sometimes still not enough. What is happening in the present and its reasons will be much more important to study. The Industrial Workshop provide us with a forum in the form of a Seminar containing expertise in their fields. The experts will share their experiences and perspectives on what is happening in the supply chain world.
@@ -193,7 +214,10 @@ const IndexPage = () => {
 
           {/* Testimonial */}
           <section id="testimonial" className="relative flex flex-col items-center w-full h-auto pb-20 bg-white text-black p-0">
-            <div className='text-center py-10'>
+            <div className='text-center py-10'
+                      data-sal="zoom-in"
+                      data-sal-duration="500"
+                      data-sal-easing="ease">
                 <h2>Testimonial</h2>
                 <p>Here what they said about IW UGM</p>
             </div>
@@ -204,8 +228,14 @@ const IndexPage = () => {
           </section>
 
           <section className=' relative w-full bg-blue text-white text-center px-10 py-20'>
-            <h2>Sponsor & Media Partner</h2>
-            <p>Still looking for potential sponsor & media partner. Please contact us for further details.</p>
+            <h2
+                      data-sal="zoom-in"
+                      data-sal-duration="500"
+                      data-sal-easing="ease">Sponsor & Media Partner</h2>
+            <p
+                                  data-sal="zoom-in"
+                                  data-sal-duration="500"
+                                  data-sal-easing="ease">Still looking for potential sponsor & media partner. Please contact us for further details.</p>
             <div className='absolute bottom-0 w-full left-0 h-12 bg-gradient-to-b from-transparent to-black'/>
           </section>
 

@@ -20,10 +20,16 @@ export default function RegisterWPC(){
             <Navbar showNav={false}/>
             <div className="absolute w-full overflow-x-hidden bg-white" >
                 <section id="home" className="bg-[url('../images/city-bg.webp')] bg-cover min-h-screen w-full flex flex-col items-center justify-center">
-                    <h1 className="text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-blue to-red mb-10 ">
+                    <h1 className="text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-blue to-red mb-10 "
+                                          data-sal="zoom-in"
+                                          data-sal-duration="500"
+                                          data-sal-easing="ease">
                         Are you registering in a team or individually?
                     </h1>
-                    <div className='grid grid-rows-2 md:grid-cols-2 gap-x-1 gap-y-4'>
+                    <div className='grid grid-rows-2 md:grid-cols-2 gap-x-1 gap-y-4'
+                                          data-sal="zoom-in"
+                                          data-sal-duration="500"
+                                          data-sal-easing="ease">
                         <a href="/register-wpc/team" className='navbar-items shadow-2xl font-normal hover:font-medium text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-red p-2.5'>
                                 Register as a Team
                         </a>
