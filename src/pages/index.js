@@ -21,6 +21,8 @@ const IndexPage = () => {
         title="IW UGM 2022">
           <meta charSet="utf-8" />
           <title>IW UGM 2022</title>
+          <meta property="og:title" content="Industrial Workshop 2022" />
+          <meta property="og:image" content="../images/iwugm.webp" />
           <link rel="icon" href={iwugm} />
       </Helmet>
       <Navbar/>
