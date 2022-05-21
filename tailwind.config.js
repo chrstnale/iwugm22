@@ -4,7 +4,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      axiforma: ['Axiforma', 'sans-serif'],
+      axiforma: ['Axiforma'],
       body: ['Montserrat'],
       deco: ['Playfair']
     },
