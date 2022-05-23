@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.27",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.4",
     "firebase": "^9.6.11",
@@ -33,6 +34,7 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
+    "react-medium-image-zoom": "^4.4.0",
     "react-scroll": "^1.8.7",
     "swiper": "^8.1.5",
     "tailwindcss": "^3.0.24"

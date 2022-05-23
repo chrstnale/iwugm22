@@ -42,16 +42,16 @@ const TimelineWPC = () => {
       {DaftarTimeline.map((item, index) => {
         return(
           <SwiperSlide>
-            <div className={`relative w-full h-60 flex flex-col rounded-xl items-center ${(index % 2 === 0) ? 'bg-blue text-white' : 'bg-white text-black'}`}
+            <div className={`relative w-full h-52 md:h-60 flex flex-col rounded-xl items-center ${(index % 2 === 0) ? 'bg-blue text-white' : 'bg-white text-black'}`}
                                   data-sal="flip-right"
                                   data-sal-duration="500"
                                   data-sal-easing="ease">
             <p className='absolute left-0 top-0 w-full p-4 font-light'>
               {item.date}
             </p>
-            <h4 className='absolute right-0 bottom-0 w-full text-right p-4 font-semibold'>
+            <h5 className='absolute right-0 bottom-0 w-full text-right p-4 font-semibold'>
               {item.title}
-            </h4>
+            </h5>
           </div>
           </SwiperSlide>
 

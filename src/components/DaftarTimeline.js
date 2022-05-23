@@ -1,7 +1,9 @@
+import React from 'react';
+
 export const DaftarTimeline = [
     {
         title: 'Registration and Abstract Submission',
-        date: 'May 23 - June 18'
+        date: <span>May 23 <br/>- June 18</span>
     },
     {
         title: 'Semi-Finalists Announcement',
@@ -9,7 +11,7 @@ export const DaftarTimeline = [
     },
     {
         title: 'Full White Paper Submission',
-        date: 'July 11 - July 30'
+        date: <span>July 11 <br/>- July 30</span>
     },
     {
         title: 'Finalists Announcement',
@@ -17,7 +19,7 @@ export const DaftarTimeline = [
     },
     {
         title: 'Re-Registration',
-        date: 'August 16 - August 19'
+        date: <span>August 16 <br/>- August 19</span>
     },
     {
         title: 'Technical Meeting & Mentor Announcement',
@@ -25,7 +27,7 @@ export const DaftarTimeline = [
     },
     {
         title: 'Video Presentation Submission',
-        date: 'August 20 - August 26'
+        date: <span>August 20 <br/>- August 26</span>
     },
     {
         title: 'Case Study Explanation',

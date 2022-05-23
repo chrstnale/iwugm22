@@ -57,12 +57,12 @@ const IndexPage = () => {
 
           {/* About */}
           <section id="about" className="relative text-white bg-blue flex flex-col md:flex-row w-full">
-            <StaticImage
-              src='../images/about.webp'
-              alt="about"
-              className='w-full md:mr-4'
-              placeholder='none'
-            />
+              <StaticImage
+                src='../images/about.webp'
+                alt="about"
+                className='w-full md:mr-4'
+                placeholder='none'
+              />
             <div className='mt-8 ml-0 md:mt-0 md:ml-8'
                           data-sal="slide-left"
                           data-sal-duration="500"
@@ -75,7 +75,7 @@ const IndexPage = () => {
                 <br/><br/>
                 This year is the 10th year of the Industrial Workshop and will appoint issues on a global scale crisis with the Grand Theme of: 
                 <br/><br/>
-                <h3 className='font-deco'>“Supply Chain Instability”</h3>
+                <h3 className='font-deco font-bold'>“Supply Chain Instability”</h3>
                 <br/>
                 The Industrial Workshop will be divided into two branches of events: a Workshop with a simulation of case solving in the form of group games and a Seminar that will be filled with several sessions of presentations from different experienced speakers.
               </p>
@@ -99,12 +99,12 @@ const IndexPage = () => {
 
           {/* WPC */}
           <section id="wpc" className="relative text-white bg-black flex flex-col lg:flex-row w-full">
-          <StaticImage
-              src='../images/poster-wpc.png'
-              alt="WPC"
-              className='w-full md:mr-4 order-3'
-              placeholder='none'
-            />
+            <StaticImage
+                src='../images/poster-wpc.png'
+                alt="WPC"
+                className='w-full h-full md:mr-4 order-2'
+                placeholder='none'
+              />
             <div className='mt-8 mr-0 md:mt-0 md:mr-8 order-1'
                 data-sal="slide-right"
                 data-sal-duration="500"
@@ -115,7 +115,8 @@ const IndexPage = () => {
                   <br/><br/>
                   The theme of the 2022 Industrial Workshop White Paper Competition is 
                 </p>
-                <h4 className='font-deco'>“Overcome Global Issues on Supply Chain Instability in Various Industries“.</h4>
+                <br/>
+                <h3 className='font-deco font-bold'>“Overcome Global Issues on Supply Chain Instability in Various Industries“.</h3>
 
                 <br/>
                 <div className='grid grid-cols-3 md:grid-cols-4 justify-items-center p-5 gap-y-4 '
@@ -140,16 +141,6 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-
-          {/* WPC Poster */}
-          {/* <section className="flex justify-center w-full h-auto bg-black text-white">
-          <StaticImage
-              src='../images/poster-wpc.png'
-              alt="Poster WPC"
-              className='w-full md:w-1/4'
-              placeholder='none'
-            />
-          </section> */}
 
           {/* WPC Timeline */}
           <section className=" relative w-full h-auto bg-black text-white pt-0 pb-20">
