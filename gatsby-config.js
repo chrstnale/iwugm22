@@ -8,6 +8,8 @@ module.exports = {
     image: "/src/images/iwugm.webp", // Path to the image placed in the 'static' folder, in the project's root directory.
   },
   plugins: [
+    `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,

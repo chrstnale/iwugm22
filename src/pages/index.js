@@ -19,8 +19,12 @@ const IndexPage = () => {
    <>
       <Helmet
         title="IW UGM 2022">
+          <html lang='en'/>
           <meta charSet="utf-8" />
           <title>IW UGM 2022</title>
+          <meta name="keywords" content="IW UGM, Industrial Workshop, White Paper Competition"/>
+          <meta name="description" content="Industrial Workshop is an annual event held by Himpunan Mahasiswa Teknik Industri Universitas Gadjah Mada. Industrial Workshop is a spectacular workshop event providing an experience of solving current industrial problems with speakers from many fields of expertise."/>
+          <description>Industrial Workshop is an annual event held by Himpunan Mahasiswa Teknik Industri Universitas Gadjah Mada. Industrial Workshop is a spectacular workshop event providing an experience of solving current industrial problems with speakers from many fields of expertise.</description>
           <meta property="og:title" content="Industrial Workshop 2022" />
           <meta property="og:image" content="../images/iwugm.webp" />
           <link rel="icon" href={iwugm} />
