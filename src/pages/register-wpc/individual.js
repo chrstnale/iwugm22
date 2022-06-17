@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
-import { Helmet } from "react-helmet"
-import iwugm from "../../images/iwugm.webp";
 import '../../styles/globals.css';
+import SEO from '../../components/Seo';
 
 export default function RegisterWPCTeam(){
     useEffect(() => {
@@ -11,12 +10,9 @@ export default function RegisterWPCTeam(){
       }, [])
     return(
         <>
-            <Helmet
-                title="IW UGM 2022">
-                <meta charSet="utf-8" />
-                <title>WPC Individual Registration</title>
-                <link rel="icon" href={iwugm} />
-            </Helmet>
+            <SEO
+                title = 'WPC Individual Registration'
+            />
             <Navbar showNav={false}/>
             <div className="absolute w-full overflow-x-hidden bg-white" >
                 <section id="home" className="bg-[url('../images/city-bg.webp')] bg-contain min-h-screen w-full flex flex-col items-center justify-center px-0">

@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `IW UGM 2022`,
-    siteUrl: `https://www.iwugm.com`,
+    title: "IW UGM 2022",
+    titleTemplate: "%s · Industrial Workshop Universitas Gadjah Mada",
     description:
-    "Industrial Workshop is an annual event held by Himpunan Mahasiswa Teknik Industri Universitas Gadjah Mada. Industrial Workshop is a spectacular workshop event providing an experience of solving current industrial problems with speakers from many fields of expertise.",
-    url: "https://www.iwugm.com", // No trailing slash allowed!
-    image: "/src/images/iwugm.webp", // Path to the image placed in the 'static' folder, in the project's root directory.
+      "Industrial Workshop Universitas Gadjah Mada (IW UGM) is an annual event held by Himpunan Mahasiswa Teknik Industri Universitas Gadjah Mada. Industrial Workshop UGM is a spectacular workshop event providing an experience of solving current industrial problems with speakers from many fields of expertise.",
+    url: "https://www.iwugm.com", 
+    image: "/src/images/iwugm.webp",
+    twitterUsername: "@iwugm",
   },
   plugins: [
     `gatsby-plugin-robots-txt`,
