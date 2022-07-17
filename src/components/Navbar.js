@@ -70,8 +70,8 @@ export default function Navbar({
                 <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-64} className="w-full lg:w-auto" onClick={handleClick}>
                     <button className='navbar-items'>Contact</button>
                 </Link>
-                <a href="/register-wpc" className='navbar-items shadow-2xl font-medium text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-red py-2' onClick={handleClick}>
-                        Register WPC
+                <a href="/register" className='navbar-items shadow-2xl font-medium text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-red py-2' onClick={handleClick}>
+                        Register
                 </a>
             </div>}
         </header>

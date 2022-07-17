@@ -20,17 +20,17 @@ export default function RegisterWPC(){
                                           data-sal="zoom-in"
                                           data-sal-duration="500"
                                           data-sal-easing="ease">
-                        Are you registering in a team or individually?
+                        Are you registering for workshop or seminar?
                     </h1>
                     <div className='grid grid-rows-2 md:grid-cols-2 gap-x-1 gap-y-4'
                                           data-sal="zoom-in"
                                           data-sal-duration="500"
                                           data-sal-easing="ease">
-                        <a href="/register-wpc/team" className='navbar-items shadow-2xl font-normal hover:font-medium text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-red p-2.5'>
-                                Register as a Team
+                        <a href="/register/workshop" className='navbar-items shadow-2xl font-normal hover:font-medium text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-red p-2.5'>
+                                Register for Workshop
                         </a>
-                        <a href="/register-wpc/individual" className='navbar-items shadow-2xl font-normal hover:font-medium text-blue border-2 border-blue hover:bg-gradient-to-r hover:from-blue hover:to-red p-2.5'>
-                                Register as an Individual
+                        <a href="/register/seminar" className='navbar-items shadow-2xl font-normal hover:font-medium text-blue border-2 border-blue hover:bg-gradient-to-r hover:from-blue hover:to-red p-2.5'>
+                                Register for Seminar
                         </a>
                         <a href="/" className='md:col-span-2 text-xs shadow-2xl text-blue border-2 border-transparent hover:text-black font-normal hover:font-medium p-2.5 text-center rounded-md'>
                                 Back to Home

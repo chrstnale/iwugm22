@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: "%s · Industrial Workshop Universitas Gadjah Mada",
     description:
       "Industrial Workshop Universitas Gadjah Mada (IW UGM) is an annual event held by Himpunan Mahasiswa Teknik Industri Universitas Gadjah Mada. Industrial Workshop UGM is a spectacular workshop event providing an experience of solving current industrial problems with speakers from many fields of expertise.",
-    url: "https://www.iwugm.com", 
+    siteUrl: "https://www.iwugm.com", 
     image: "/src/images/iwugm.webp",
     twitterUsername: "@iwugm",
   },
