@@ -151,9 +151,9 @@ const IndexPage = () => {
           {/* Workshop */}
           <section id="workshop" className="relative text-white bg-red flex flex-col md:flex-row w-full pb-20">
             <StaticImage
-              src='../images/poster-workshop.png'
+              src='../images/workshop.webp'
               alt="workshop"
-              className='w-full h-full md:mr-4'
+              className='w-full md:mr-4'
               placeholder='none'
             />
             <div className='mt-8 ml-0 md:mt-0 md:ml-8'
@@ -177,10 +177,7 @@ const IndexPage = () => {
                 <h4 className='text-center'>on Saturday, 10 September 2022</h4>
                 <p className='text-center'>8:00 am - 5:00 pm (GMT +7)</p>
                 <br/>
-                <a href="http://bit.ly/IW2022-location" target='blank' rel='noopener noreferrel' className='text-center mb-4 font-semibold text-base text-white hover:text-black py-2 flex justify-center items-center' >
-                  Location Maps
-                </a>
-                <a href="/register/workshop" className='text-center navbar-items shadow-2xl font-semibold text-base text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-white hover:text-black py-2 flex justify-center items-center' >
+                <a href="/register-seminar" className='text-center navbar-items shadow-2xl font-semibold text-base text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-black py-2 flex justify-center items-center' >
                   Register for Workshop
                 </a>
               </div>
@@ -223,7 +220,7 @@ const IndexPage = () => {
             <StaticImage
               src='../images/poster-workshop.png'
               alt="seminar"
-              className='w-full h-full md:mr-4 order-1 md:order-3'
+              className='w-full md:mr-4 order-1 md:order-3'
               placeholder='none'
             />
             <div className='mt-8 mr-0 md:mt-0 md:mr-8 order-2'
@@ -246,7 +243,7 @@ const IndexPage = () => {
                 <br/>
                 <p>Benefit: E-certificate</p>
                 <br/>
-                <a href="/register/seminar" className='text-center navbar-items shadow-2xl font-semibold text-base text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-white hover:text-black py-2 flex justify-center items-center' >
+                <a href="/register-seminar" className='text-center navbar-items shadow-2xl font-semibold text-base text-white bg-blue hover:bg-gradient-to-r hover:from-blue hover:to-black py-2 flex justify-center items-center' >
                   Register for Seminar
                 </a>
               </div>
